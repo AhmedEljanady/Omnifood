@@ -64,6 +64,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  overflow-x: hidden;
 }
 
 html {
@@ -71,6 +73,8 @@ html {
   /* 10px make easy to calculate rem from 16px*/
   font-size: 62.5%;
   /* 10px/16px >> .625 >> 62.5% */
+
+  overflow-x: hidden;
 }
 
 /* --------------------- */
@@ -124,7 +128,6 @@ html {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
-  
 }
 
 .heading-primary {
@@ -199,7 +202,7 @@ html {
 .btn--form {
   background-color: #45260a;
   color: #fdf2e9;
-  align-self:end;
+  align-self: end;
   padding: 1.2rem;
 }
 
@@ -225,8 +228,8 @@ html {
 }
 
 *:focus {
-outline: none;
-box-shadow: 0 0 0 .5rem #e67d227e;
+  outline: none;
+  box-shadow: 0 0 0 0.5rem #e67d227e;
 }
 
 .margin-right-sm {
@@ -244,7 +247,6 @@ box-shadow: 0 0 0 .5rem #e67d227e;
 strong {
   font-weight: 500;
 }
-
 
 .list {
   list-style: none;
@@ -265,5 +267,3 @@ strong {
   height: 3rem;
   color: #e67e22;
 }
-
-
