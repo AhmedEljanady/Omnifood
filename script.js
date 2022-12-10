@@ -15,6 +15,36 @@ navBtn.addEventListener("click", function () {
   header.classList.toggle("nav-open");
 });
 
+//////////////////////////////////
+//smooth scrolling
+
+const allLinks = document.querySelectorAll("a");
+allLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    // implement smooth scrolling
+    // scroll to top
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    //scroll to other places
+    if (href !== "#" && href.startsWith("#")) {
+      const section = document.querySelector(href);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // close mobile navigation
+    if (link.classList.contains("main-nav-link"))
+      header.classList.toggle("nav-open");
+  });
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

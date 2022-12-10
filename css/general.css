@@ -75,6 +75,9 @@ html {
   /* 10px/16px >> .625 >> 62.5% */
 
   overflow-x: hidden;
+
+  /* not working on safari */
+  /* scroll-behavior: smooth; */
 }
 
 /* --------------------- */
