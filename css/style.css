@@ -147,7 +147,7 @@
 .featured-logos {
   display: flex;
   justify-content: space-around;
-  width: 114rem;
+  /* width: 114rem; */
 }
 .featured-img {
   height: 3.2rem;
