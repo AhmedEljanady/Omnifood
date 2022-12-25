@@ -199,6 +199,10 @@ instead, 1rem = 1em = 16px */
     grid-template-columns: 1fr;
   }
 
+  .heading-secondary {
+    font-size: 4.6rem;
+  }
+
   .btn,
   .btn:link,
   .btn:visited {
