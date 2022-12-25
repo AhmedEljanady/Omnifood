@@ -209,6 +209,10 @@ instead, 1rem = 1em = 16px */
     padding: 2.4rem 1.6rem;
   }
 
+  .main-nav {
+    width: 100%;
+  }
+
   .section-hero {
     padding: 2.4rem 0 6.4rem 0;
   }
